@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>CONTACT FORM</title>
+         
+    </head>
+
+    <style>
+        .text_{
+            font-size: 80%; text-align: justify; margin-bottom: 5px; margin-top: 20px;
+        }
+        body
+        {
+   background:linear-gradient(to bottom right, rgb(86, 0, 156), rgba(92, 192, 218, 0.87));
+        background-repeat: no-repeat;
+        height: 100vh;
+        }
+        form
+        {
+         width: 100% ;
+         text-align: center;
+        }
+        input
+        {
+           width: 490px;
+           height: 30px;
+        }
+    </style>
+    <body>
+        <h1 style="color:white;text-align: center;" >
+        contact us
+        </h1>
+        <h2 style="color:white;text-align: center;" >
+            got a question?we would love to hear hear from you.send us a message,we'll send you message as soon as possible
+            </h2>
+        <form>
+        <div>
+            <br>
+            <div style="text-align: left; padding-left: 30%;">
+        <label style="color:white;text-align: center;"for="name"><name>name*</label>
+        <br>
+        </div>
+        <input type="text" name="name" id="name">
+            <br>
+            <div style="text-align: left; padding-left: 30%;">
+            <label style="color:white;text-align: center;"for="email">email*</label>
+            <br>
+        </div>
+            <input type="text" email="email" id="email">
+            <br>
+            <div style="text-align: left; padding-left: 30%;">
+            <label style="color:white;text-align: center;"for="message">message*</label>
+            <br>
+            </div>
+            <textarea name="message" id="message" cols="70" rows="10"></textarea>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="send message" onclick="showAlert()" style="background-color: rgb(79, 67, 241)">
+        
+        </div>
+    </form>
+        
+    </body>
+    <script>
+        function showAlert() {
+          alert("Submit button clicked!");
+        }
+      </script>
+    
+</html>

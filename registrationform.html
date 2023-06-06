@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration Form</title>
+</head>
+<style>
+body{background: linear-gradient(rgba(201, 7, 143, 0.856),rgba(72, 3, 112, 0.836)); background-repeat: no-repeat; height: 100vh; }
+.st{background-color: white; text-align:left; margin-top:50px; margin-left:50px; padding-left:30px; padding-right:30px; padding-top:15px; padding-bottom:15px; height:65%; width:90%;}
+</style>
+</body>   
+<div class="st"> 
+  <form action="registrationform.html" method="get"></form>
+<h1> Registration Form</h1>
+        <div> 
+          <br>
+            <label for="name" >first name </label>
+          </br>
+        </div>
+        <input type="text" id="name" name="name" size="50"/>
+        <label for="name" > last name </label>
+        <input type="text" id="name" name="name" size="50"/>
+        <div> 
+            <br>
+         <label for="birthday" >Birthday </label>
+         </br>
+         </div>
+         <div style="display: flex; width: 70%;">
+            <input type="date" id="start" name="trip-start"
+            value="2021-03-31"
+            min="2021-01-01" max="2021-12-31">
+
+            <label for="gender" style="padding-left: 230px; "> Gender </label>
+            <fieldset style="width: 300px; border-width: 0px;">
+                <label><input type="radio" name="radio" value="male" /> male</label>
+                <label><input type="radio" name="radio" value="female" /> female</label>
+              </fieldset>
+            </div>
+            <div> 
+                <br>
+             <label for="email" >Email </label>
+             </br>
+             </div>
+                <input type="text" id="email" email="email" size="50"/>
+                <label for="phone" > phone number </label>
+        <input type="number" id="phone" phone="phone" size="50"/>
+        <div> 
+            <br>
+         <label for="subject" > subject</label>
+         </br>
+         <select name="option" id="option-select" style="width:50%;">
+            <option value="">--Please choose an option--</option>
+            <option value="student">student</option>
+            <option value="professional">professional</option>
+            </select>
+         </div>
+         <div></div>
+            <br>
+<input type="submit" value="submit" onclick="showAlert()" style="background-color: blue;color: white;">
+        </br>
+    </div>
+</form>
+<script>
+  function showAlert() 
+  {
+    alert("Submit button clicked!");
+  }
+</script>
+</body>
+</html>
